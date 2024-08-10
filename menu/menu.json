@@ -1,33 +1,26 @@
 [
     {
         "name": "Hamburger",
+        "type": "beef",
         "price": 4.99,
-        "description": "Classic beef patty with lettuce, tomato, and pickles.",
         "image": "assets/hamburger.jpg"
     },
     {
         "name": "Cheeseburger",
+        "type": "beef",
         "price": 5.49,
-        "description": "Hamburger with melted cheese on top."
+        "image": "assets/cheeseburger.jpg"
     },
     {
-        "name": "Chicken Sandwich",
+        "name": "Chicken Burger",
+        "type": "chicken",
         "price": 5.99,
-        "description": "Grilled chicken breast with lettuce and mayo."
+        "image": "assets/chicken-hamburger.jpg"
     },
     {
-        "name": "French Fries",
-        "price": 2.49,
-        "description": "Crispy golden fries."
-    },
-    {
-        "name": "Onion Rings",
-        "price": 2.99,
-        "description": "Battered and deep-fried onion rings."
-    },
-    {
-        "name": "Soft Drink",
-        "price": 1.99,
-        "description": "Choice of soda or iced tea."
+        "name": "Fish Burger",
+        "type": "fish",
+        "price": 6.49,
+        "image": "assets/fish-hamburger.jpg"
     }
 ]

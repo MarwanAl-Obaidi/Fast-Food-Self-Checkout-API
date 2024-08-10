@@ -20,7 +20,7 @@ app.get('/welcomeCover.jpg', (req, res) => {
 });
 
 app.get('/hamburger.jpg', (req, res) => {
-  res.sendFile(path.join(__dirname, '/menu/assets/hamburger.jpg'));
+  res.sendFile(path.join(__dirname, '/menu/assets/hamburgers/hamburger.jpg'));
 });
 
 app.listen(port, () => {
