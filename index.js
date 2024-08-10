@@ -19,8 +19,17 @@ app.get('/welcomeCover.jpg', (req, res) => {
   res.sendFile(path.join(__dirname, '/siteAssets/welcome/welcomeCover.jpg'));
 });
 
-app.get('/hamburger.jpg', (req, res) => {
-  res.sendFile(path.join(__dirname, '/menu/assets/hamburgers/hamburger.jpg'));
+const images = [
+  { name: 'hamburger', path: '/menu/assets/hamburgers/hamburger.jpg' },
+  { name: 'cheeseBurger', path: '/menu/assets/hamburgers/cheeseBurger.jpg' },
+  { name: 'chickenBurger', path: '/menu/assets/hamburgers/chickenBurger.jpg' },
+  { name: 'fishBurger', path: '/menu/assets/hamburgers/fishBurger.jpg' },
+];
+
+images.forEach((image) => {
+  app.get(`/${image.name}.jpg`, (req, res) => {
+    res.sendFile(path.join(__dirname, image.path));
+  });
 });
 
 app.listen(port, () => {

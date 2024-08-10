@@ -1,26 +1,30 @@
 [
     {
         "name": "Hamburger",
-        "type": "beef",
+        "type": "burger",
+        "mainIngredient": "beef",
         "price": 4.99,
-        "image": "assets/hamburger.jpg"
+        "image": "https://fast-food-self-checkout-api.onrender.com/hamburger.jpg"
     },
     {
         "name": "Cheeseburger",
-        "type": "beef",
+        "type": "burger",
+        "mainIngredient": "beef",
         "price": 5.49,
-        "image": "assets/cheeseburger.jpg"
+        "image": "https://fast-food-self-checkout-api.onrender.com/cheeseBurger.jpg"
     },
     {
         "name": "Chicken Burger",
-        "type": "chicken",
+        "type": "burger",
+        "mainIngredient": "chicken",
         "price": 5.99,
-        "image": "assets/chicken-hamburger.jpg"
+        "image": "https://fast-food-self-checkout-api.onrender.com/chickenBurger.jpg"
     },
     {
         "name": "Fish Burger",
-        "type": "fish",
+        "type": "burger",
+        "mainIngredient": "fish",
         "price": 6.49,
-        "image": "assets/fish-hamburger.jpg"
+        "image": "https://fast-food-self-checkout-api.onrender.com/fishBurger.jpg"
     }
 ]
