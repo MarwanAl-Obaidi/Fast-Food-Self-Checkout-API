@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Hamburger",
+        "price": 4.99,
+        "description": "Classic beef patty with lettuce, tomato, and pickles."
+    },
+    {
+        "name": "Cheeseburger",
+        "price": 5.49,
+        "description": "Hamburger with melted cheese on top."
+    },
+    {
+        "name": "Chicken Sandwich",
+        "price": 5.99,
+        "description": "Grilled chicken breast with lettuce and mayo."
+    },
+    {
+        "name": "French Fries",
+        "price": 2.49,
+        "description": "Crispy golden fries."
+    },
+    {
+        "name": "Onion Rings",
+        "price": 2.99,
+        "description": "Battered and deep-fried onion rings."
+    },
+    {
+        "name": "Soft Drink",
+        "price": 1.99,
+        "description": "Choice of soda or iced tea."
+    }
+]

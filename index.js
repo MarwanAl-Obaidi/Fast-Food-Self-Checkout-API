@@ -1,13 +1,24 @@
-const http = require('http');
+const express = require('express');
+const path = require('path');
+const app = express();
 
 const port = 3000;
 
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Fast Food Self Checkout API');
+app.get('/', (req, res) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept",
+    "Content-Security-Policy",
+    "img-src 'self'"
+  );
+  res.sendFile(path.join(__dirname, '/menu/menu.json'));
 });
 
-server.listen(port, () => {
-  console.log('Server is running at port ' + port);
+app.get('/welcomeCover.jpg', (req, res) => {
+  res.sendFile(path.join(__dirname, '/assets/welcome/welcomeCover.jpg'));
+});
+
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}.`);
 });
