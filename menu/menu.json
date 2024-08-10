@@ -2,7 +2,8 @@
     {
         "name": "Hamburger",
         "price": 4.99,
-        "description": "Classic beef patty with lettuce, tomato, and pickles."
+        "description": "Classic beef patty with lettuce, tomato, and pickles.",
+        "image": "assets/hamburger.jpg"
     },
     {
         "name": "Cheeseburger",

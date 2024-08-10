@@ -16,7 +16,11 @@ app.get('/', (req, res) => {
 });
 
 app.get('/welcomeCover.jpg', (req, res) => {
-  res.sendFile(path.join(__dirname, '/assets/welcome/welcomeCover.jpg'));
+  res.sendFile(path.join(__dirname, '/siteAssets/welcome/welcomeCover.jpg'));
+});
+
+app.get('/hamburger.jpg', (req, res) => {
+  res.sendFile(path.join(__dirname, '/menu/assets/hamburger.jpg'));
 });
 
 app.listen(port, () => {
